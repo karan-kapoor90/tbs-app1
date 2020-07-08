@@ -1,0 +1,11 @@
+apiVersion: skaffold/v2beta4
+kind: Config
+metadata:
+  name: tenant-details
+build:
+  artifacts:
+  - image: karankapoor/multi-tenant
+deploy:
+  kustomize:
+    paths:
+    - kube
